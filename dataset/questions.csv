@@ -1,0 +1,26 @@
+id,category,question,reference_answer,difficulty,keywords
+1,General Knowledge,What is the capital city of Australia?,Canberra,Easy,capital|australia|canberra
+2,General Knowledge,Who was the first person to walk on the Moon?,Neil Armstrong,Easy,moon|neil armstrong|apollo 11|1969
+3,General Knowledge,Which country has won the most FIFA World Cup titles?,Brazil,Easy,brazil|fifa|world cup|titles
+4,General Knowledge,Which is the longest river on Earth?,Nile River,Medium,nile|river|longest|africa
+5,General Knowledge,In what year did World War II end?,1945,Easy,1945|world war ii|end
+6,Mathematics,A train travels 240 kilometers in 3 hours. What is its average speed in km/h?,80 km/h,Easy,80|km/h|speed|average
+7,Mathematics,If 3x + 15 = 45, what is the value of x?,10,Easy,10|value of x|x = 10
+8,Mathematics,A shop offers a 20% discount on a jacket priced at $150. What is the final sale price?,$120,Medium,120|$120|discount|sale price
+9,Mathematics,What is the area of a circle with a radius of 7 cm? (Use pi = 22/7),154 sq cm,Medium,154|cm2|sq cm|area|circle
+10,Mathematics,"Find the median of the following numbers: 12, 5, 22, 30, 7, 9, 18",12,Medium,12|median|sorted|middle
+11,Logical Reasoning,If all roses are flowers and some flowers fade quickly, can we logically conclude that all roses fade quickly?,No,Medium,no|cannot conclude|invalid|fallacy
+12,Logical Reasoning,"A is the father of B, but B is not the son of A. How is B related to A?",Daughter,Easy,daughter|child|girl
+13,Logical Reasoning,Five people run a race. Alan finished before Bob. Bob finished before Charlie. David finished before Alan. Who won the race?,David,Medium,david|winner|first|won
+14,Logical Reasoning,"What occurs once in every minute, twice in every moment, but never in a thousand years?",The letter M,Easy,m|letter m|letter
+15,Logical Reasoning,If yesterday was Monday, what day will it be 3 days after tomorrow?,Sunday,Medium,sunday|days|tomorrow
+16,Science,What organelle is known as the powerhouse of the cell?,Mitochondria,Easy,mitochondria|powerhouse|cell|atp
+17,Science,What is the chemical formula for water?,H2O,Easy,h2o|water|hydrogen|oxygen
+18,Science,What is the approximate speed of light in a vacuum in km/s?,300000 km/s,Medium,300000|300,000|3 x 10^8|speed of light
+19,Science,Which planet in our solar system has the highest average surface temperature?,Venus,Medium,venus|hottest|greenhouse|surface
+20,Science,What biological process do green plants use to convert sunlight into chemical energy?,Photosynthesis,Easy,photosynthesis|chlorophyll|glucose|sunlight
+21,Programming,In Python, what built-in function returns the number of items in a list?,len(),Easy,len|len()|length|function
+22,Programming,"Write a one-line Python list comprehension to extract all even numbers from numbers = [1, 2, 3, 4, 5, 6].",[x for x in numbers if x % 2 == 0],Medium,list comprehension|x % 2 == 0|even|[x for x in numbers if x % 2 == 0]
+23,Programming,What is the average time complexity of looking up a key in a standard Python dictionary?,O(1),Medium,o(1)|constant time|hash table|average
+24,Programming,"In Python, what is the difference between the '==' operator and the 'is' operator?",'==' checks value equality while 'is' checks object identity in memory,Medium,==|is|equality|identity|reference|memory
+25,Programming,What exception is raised in Python when attempting to divide an integer by zero?,ZeroDivisionError,Easy,zerodivisionerror|divide by zero|exception
