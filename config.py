@@ -10,14 +10,24 @@ from dotenv import load_dotenv
 # Load environment variables from .env file if available
 load_dotenv()
 
+# Detect serverless / Vercel cloud environment
+IS_VERCEL = bool(os.getenv("VERCEL") or os.getenv("AWS_LAMBDA_FUNCTION_NAME"))
+
 # Base directories
 BASE_DIR = Path(__file__).resolve().parent
 DATASET_DIR = BASE_DIR / "dataset"
-RESULTS_DIR = BASE_DIR / "results"
 
-# Ensure runtime directories exist
-DATASET_DIR.mkdir(parents=True, exist_ok=True)
-RESULTS_DIR.mkdir(parents=True, exist_ok=True)
+# On Vercel, the root filesystem is read-only, only /tmp is writable
+if IS_VERCEL:
+    RESULTS_DIR = Path("/tmp/results")
+else:
+    RESULTS_DIR = BASE_DIR / "results"
+
+# Safely ensure directories exist without crashing on read-only systems
+try:
+    RESULTS_DIR.mkdir(parents=True, exist_ok=True)
+except Exception:
+    pass
 
 # File paths
 QUESTIONS_FILE = DATASET_DIR / "questions.csv"
